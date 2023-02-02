@@ -1,3 +1,9 @@
+/*
+Daphne Luzong 
+username: dluzong
+Task B: Find the smaller of the three integers
+    - Asks the user to input 3 integer numbers and prints the smallest of the three
+*/
 #include <iostream>
 
 int main(){
