@@ -1,4 +1,10 @@
-// Task A: Find the smaller of the two integers
+/*
+Daphne Luzong
+username: dluzong
+Task A: Find the smaller of the two integers
+    - Asks the user for 2 numbers, and prints the smaller number
+*/
+
 #include <iostream>
 
 int main(){
