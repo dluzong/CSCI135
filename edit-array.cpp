@@ -2,7 +2,7 @@
 Daphne Luzong
 CSCI135
 Michael Zamansky
-LAB2A
+Lab2C
 
 Task C: Using arrays to store, update, and retrieve numbers
 Program creates an array of 10 integers, and provides user an interface to edit
