@@ -31,7 +31,12 @@ int main()
 
   //Task D
   std::cout << "Date 1: 1/01/2018, Date 2: 1/05/2018 \n"; 
-  reverse_order("1/01/2018", "1/05/2018");
+  reverse_order("01/01/2018", "01/05/2018");
+  std::cout << "\n";
   
+  std::cout << "Date 1: 04/05/2018, Date 2: 04/10/2018 \n";
+  reverse_order("04/05/2018", "04/10/2018");
+  std::cout << "\n";
+
   return 0;
 }
