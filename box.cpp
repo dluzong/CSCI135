@@ -1,3 +1,4 @@
+// Task A: a solid rectangular box of given size using "*"
 #include <iostream>
 #include <string>
 #include "funcs.h"
@@ -12,5 +13,4 @@ std::string box(int width, int height){
         shape += "\n";
     }
     return shape;
-    return 0;
 }
