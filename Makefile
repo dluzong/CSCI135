@@ -1,10 +1,10 @@
 main: main.o box.o
-	g++ -c main main.o box.o
+	g++ -o main main.o box.o
 
-main.o: main.cpp box.h
-	g++ main.cpp 
+main.o: main.cpp funcs.h
+	g++ -c main.cpp 
 
-box.o: box.cpp box.h
+box.o: box.cpp funcs.h
 	g++ -c box.cpp
 
 clean:

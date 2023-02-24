@@ -1,16 +1,16 @@
-/*
-Task A. Box
-Takes in width and height and prints a rectangular shape with respected dimensions using astericks
-*/
 #include <iostream>
 #include <string>
+#include "funcs.h"
 
 std::string box(int width, int height){
-    for (int i = 0; i < height; i++){
-        for (int j = 0; j < width; j++){
-            std::cout << "*";
+    int i, j;
+    std::string shape = "";
+    for(i = 0; i < height; i++){
+        for (j = 0; j < width; j++){
+            shape += "*";
         }
-        std::cout << "\n";
+        shape += "\n";
     }
+    return shape;
     return 0;
 }
