@@ -33,5 +33,21 @@ TEST_CASE("Task D, countPrimes") {
   CHECK(countPrimes(1,20) == 8);
   CHECK(countPrimes(0,3) == 2);
   CHECK(countPrimes(1,10) == 4);
-  
+}
+
+TEST_CASE("Task E, isTwinPrime"){
+  CHECK(isTwinPrime(3) == 1);
+  CHECK(isTwinPrime(23) == 0);
+  CHECK(isTwinPrime(11) == 1);
+}
+
+TEST_CASE("Task F, nextTwinPrime"){
+  CHECK(nextTwinPrime(3) == 5);
+  CHECK(nextTwinPrime(7) == 11);
+}
+
+TEST_CASE("Task G, largestTwinPrime"){
+  CHECK(largestTwinPrime(5,18) == 17);
+  CHECK(largestTwinPrime(1,31) == 31);
+  CHECK(largestTwinPrime(14,16) == -1);
 }

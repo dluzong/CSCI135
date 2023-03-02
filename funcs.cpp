@@ -56,3 +56,42 @@ int countPrimes(int a, int b){
     }
     return count;
 }
+
+//Task E: Is a twin prime?
+bool isTwinPrime(int n){
+    if(isPrime(n)){
+        if(isPrime(n+2) == 1 || isPrime(n-2) == 1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    return 0;
+}
+
+//Task F:
+int nextTwinPrime(int n){
+    int i = 1+n;
+
+    while(isPrime(n)){
+        if(isTwinPrime(i)){
+            return i;
+        }
+        else{
+            i++;
+        }
+    }
+    return i;
+}
+
+//Task G: Largest twin prime in range
+int largestTwinPrime(int a, int b){
+    int largestPrime = -1;
+    for(int i = a; i <= b; i++){
+        if(isTwinPrime(i)){
+            largestPrime = i;
+        }
+    }
+    return largestPrime;
+}
