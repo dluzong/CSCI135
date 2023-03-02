@@ -20,7 +20,7 @@ bool isDivisibleBy(int n, int d){
 
 //Task B: Is a Prime?
 bool isPrime(int n){
-    if(n == 0 || n==1){
+    if(n == 0 || n==1){ // 0 and 1 are not prime
         return false;
     }
     for(int i = 2; i < n; i++){
@@ -88,7 +88,8 @@ int nextTwinPrime(int n){
 //Task G: Largest twin prime in range
 int largestTwinPrime(int a, int b){
     int largestPrime = -1;
-    for(int i = a; i <= b; i++){
+
+    for(int i = a; i <= b; i++){ //range
         if(isTwinPrime(i)){
             largestPrime = i;
         }
