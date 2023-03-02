@@ -33,4 +33,5 @@ TEST_CASE("Task D, countPrimes") {
   CHECK(countPrimes(1,20) == 8);
   CHECK(countPrimes(0,3) == 2);
   CHECK(countPrimes(1,10) == 4);
+  
 }
