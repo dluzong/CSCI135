@@ -5,8 +5,8 @@
 #include "decrypt.h"
 
 TEST_CASE("Task B, caesar"){
-    CHECK(encryptCaesar("Hello, World!", 5) == "Rovvy, Gybvn!");
-    CHECK(encryptCaesar("Way to Go!", 10) == "Bfd yt Lt!");
+    CHECK(encryptCaesar("Hello, World!", 10) == "Rovvy, Gybvn!");
+    CHECK(encryptCaesar("Way to Go!", 5) == "Bfd yt Lt!");
 }
 
 TEST_CASE("Task C, vigenere"){
@@ -16,5 +16,5 @@ TEST_CASE("Task C, vigenere"){
 
 TEST_CASE("Task D, decrypt"){
     CHECK(decryptCaesar("Rovvy, Gybvn!", 10) == "Hello, World!");
-    CHECK(encryptVigenere("Jevpq, Wyvnd!", "cake") == "Hello, World!");
+    CHECK(decryptVigenere("Jevpq, Wyvnd!", "cake") == "Hello, World!");
 }
