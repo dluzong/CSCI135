@@ -11,8 +11,8 @@ Lab 7
 #include "funcs.h"
 
 int main(){
-    std::cout << removeLeadingSpaces("        Hello This is A Test") <<std::endl;
-    std::cout << countChar("This is a Test{ blah blah {", '{')<<std::endl;
+    std::cout << removeLeadingSpaces("        Hello Test") <<std::endl;
+    std::cout << countChar("Testing{ 1 2 3 {", '{')<<std::endl;
     std::cout << indentFile("bad-code.cpp");
     return 0;
 }
