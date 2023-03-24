@@ -5,6 +5,7 @@ main: main main.o imageio.o funcs.o
 sample: sample.o imageio.o
 	g++ -o sample sample.o imageio.o
 
+main.o: main.cpp funcs.h imageio.h
 
 funcs.o: funcs.cpp funcs.h	
 
