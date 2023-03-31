@@ -19,7 +19,7 @@ int main(){
   //Task B: Farthest from the origin?
   //Utilizes pointP here too
   Coord3D pointQ = {-20, 21, -22};
-
+  Coord3D pointZ = {3,4,5};
   std::cout << "Address of P: " << &pointP << std::endl;
   std::cout << "Address of Q: " << &pointQ << std::endl;
 
