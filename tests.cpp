@@ -19,7 +19,16 @@ TEST_CASE("Task D, decrypt"){
     CHECK(decryptVigenere("Jevpq, Wyvnd!", "cake") == "Hello, World!");
 }
 
+TEST_CASE("Cipher lab, freq"){
+    CHECK(freq('a',"aaaa") == 100);
+    CHECK(freq('l', "hello world")== doctest::Approx(27.2727));
+}
+TEST_CASE("Cipher lab, distance"){
+    double a[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    double b[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    CHECK(distance(a,b) == 0);
+}
 TEST_CASE("Cipher lab, solve func"){
-    CHECK(solve(encryptCaesar("Hello World!", 10)) == "Hello World!");
+    CHECK(solve(encryptCaesar("Once upon a time, there was a princess", 8)) == "Once upon a time, there was a princess");
     CHECK(solve(encryptCaesar("I love cats and dogs", 5)) == "I love cats and dogs");
 }

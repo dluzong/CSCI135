@@ -51,14 +51,14 @@ double freq(char letter, std::string encrypted_string){
             freq++;
         }
     }
-    freq = freq/len *100;
+    freq = (freq/len) *100;
     return freq;
 }
 
 double distance(double* letter, double * encrypted){
     double result = 0;
     for(int i = 0; i < 26; i++){
-        result += pow(letter[i]-encrypted[i],2);
+        result += pow(letter[i]-encrypted[i], 2);
     }
     result = sqrt(result);
     return result;
@@ -72,13 +72,13 @@ std::string solve(std::string encrypted_string){
     for(int i = 0; i < 26; i++){
         encryptFreq[i] = freq(letter[i], encrypted_string);
     }
-    std::string rotation;
+    std::string rotate;
     int shift;
     double lowestDist = distance(letterFreq, encryptFreq);
     for(int j = 0; j < 26; j++){
-        rotation = decryptCaesar(encrypted_string, j);
+        rotate = decryptCaesar(encrypted_string, j);
         for(int k = 0; k < 26; k++){
-            encryptFreq[k] = freq(letter[k], rotation);
+            encryptFreq[k] = freq(letter[k], rotate);
         }
         if(lowestDist > distance(letterFreq, encryptFreq)){
             shift = j;
