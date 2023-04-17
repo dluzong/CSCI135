@@ -18,3 +18,8 @@ TEST_CASE("Task D, decrypt"){
     CHECK(decryptCaesar("Rovvy, Gybvn!", 10) == "Hello, World!");
     CHECK(decryptVigenere("Jevpq, Wyvnd!", "cake") == "Hello, World!");
 }
+
+TEST_CASE("Cipher lab, solve func"){
+    CHECK(solve(encryptCaesar("Hello World!", 10)) == "Hello World!");
+    CHECK(solve(encryptCaesar("I love cats and dogs", 5)) == "I love cats and dogs");
+}
