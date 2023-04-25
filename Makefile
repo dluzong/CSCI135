@@ -14,4 +14,4 @@ network.o: network.cpp network.h
 tests.o: tests.cpp
 
 clean:
-	rm -f main.o tests.o profile.o
+	rm -f main.o tests.o profile.o network.o
