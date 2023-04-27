@@ -48,7 +48,5 @@ TEST_CASE("Task C: following"){
     CHECK(net.follow("yoshi", "mario") == true);
     CHECK(net.follow("yoshi", "luigi") == true);
 
-
-
 }
  
