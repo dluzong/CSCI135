@@ -12,7 +12,7 @@
 bool Network::addUser(std::string usrn, std::string dspn){
     bool alphanumerical = true;
     for(int i = 0; i < usrn.length(); i++){
-        if(!isalpha(usrn[i]) && !isdigit(usrn[i])){
+        if(!isalpha(usrn[i]) && !isdigit(usrn[i])){ //checks that there's no space or special characters in username
             alphanumerical = false;
         }
     }
@@ -64,13 +64,13 @@ in the following format:
     }
 
 */
+
 void Network::printDot(){
     std::cout << "disgraph {" << std::endl;
-    for(int i = 0; i < MAX_USERS; i++){
-        if(findID(profiles[i].getUsername()) != -1){
-            std::cout << "\t\"@" << profiles[i].getUsername() << "\"" << std::endl;
-        }
+    for(int i = 0; i < numUsers; i++){
+        std::cout << "\t\"@" << profiles[i].getUsername() << "\"" << std::endl;
     }
+    std::cout << "\n";
     for(int i = 0; i < numUsers; i++){
         for(int j = 0; j < numUsers; j++){
             if(following[i][j] == true){
@@ -78,4 +78,5 @@ void Network::printDot(){
             }
         }
     }
+    std::cout << "}" << std::endl;
 }

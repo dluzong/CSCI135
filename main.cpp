@@ -25,6 +25,7 @@ int main() {
 
 
 //given usage example for Task B (needs --std=c++11 flag to compile)
+  /*
   Network nw;
   std::cout << nw.addUser("mario", "Mario") << std::endl;     // true (1)
   std::cout << nw.addUser("luigi", "Luigi") << std::endl;     // true (1)
@@ -60,7 +61,21 @@ int main() {
   // additionally, make @mario2 follow @luigi
   nw.follow("mario2", "luigi");
 
-  nw.printDot();
+  nw.printDot();*/
+  std::cout << "----------" << std::endl;
+  Network net;
+    net.addUser("mario", "Mario");
+    net.addUser("luigi", "Luigi");
+    net.addUser("yoshi", "Yoshi");
+    
+    net.follow("mario", "luigi");
+    net.follow("mario", "yoshi");
+    net.follow("luigi", "mario");
+    net.follow("luigi", "yoshi");
+    net.follow("yoshi", "mario");
+    net.follow("yoshi", "luigi");
+
+    net.printDot();
     
   return 0;  
 }
