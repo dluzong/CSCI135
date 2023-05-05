@@ -1,10 +1,10 @@
 * Spring 2023 - Lab 12
 
-* Last name:
+* Last name: Luzong
 
-* First name:
+* First name: Daphne
 
-* GitHub username:
+* GitHub username: dluzong
 
 * Notes:
 
