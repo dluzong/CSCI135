@@ -1,7 +1,7 @@
-main: main.o
+main: main.o vectors.o optimism.o fusion.o pairwise.o
 	g++ -o main main.o vectors.o optimism.o fusion.o pairwise.o
 
-tests: tests.o
+tests: tests.o vectors.o optimism.o fusion.o pairwise.o
 	g++ -o tests tests.o vectors.o optimism.o fusion.o pairwise.o
 
 main.o: main.cpp funcs.h
